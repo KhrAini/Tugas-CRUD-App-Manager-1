@@ -8,7 +8,7 @@
 </head>
 <body class="login-form">
     <div class="cover">
-        <form action="dashboard.html    " id="myForm" class="form">
+        <form action="dashboard.php    " id="myForm" class="form">
             <div class="email form-input">
                 <label for="email" class="text"> Email</label>
                 <input type="email" id="email" name="email" class="style-box" required>
