@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edf3d7;
+}
+input {
+  width: 100%;
+}
+.form-input {
+  margin: 10px 0 0 0;
+}
+.form {
+  width: 60%;
+}
+.cover {
+  width: 350px;
+  height:350px;
+  background-color: #5d9177;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.style-box{
+  height: 30px;
+  font-weight: 500px;
+  font-size: 15px;
+  border-radius: 10px;
+  border-color: beige;
+}
+.style-box-login{
+  width: 100px;
+  height: 30px;
+  margin: 30px;
+  font-size: 15px;
+  color: #3d574a;
+  border-radius: 10px;
+  border-color: beige;
+  font-weight: bold;
+  margin-left: 55px
+
+}
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text {
+  color: #1d4631;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3d574a;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar h1 img {
+  width: 100%;
+  position: relative;
+  margin-bottom: -25px;
+
+}
+.sidebar {
+  text-align: center; 
+}
+
+.sidebar form {
+  text-align: center;
+  margin-top: 400px; 
+}
+
+.sidebar form button {
+  background-color: #b8c7a5; 
+  box-shadow:  2px 4px rgba(0, 0, 0, 0.1);  border: none;
+  color: #3d574a;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.dashboard {
+  text-align: center;
+}
+
+.dashboard h1 {
+  text-align: center;
+  font-size: 28px; /* Ukuran teks */
+  color: #333; /* Warna teks */
+  margin-left: 200px;
+
+}
+
+.reservation {
+  margin-left: 200px;
+  padding: 20px;
+  background-color: #c9ddb0;
+
+}
+
+.reservation h2 {
+  color:#132e35 ;
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #32644d;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #3d574a;
+  color: #f7f7f7;
+}
+
+.reservation button {
+  background-color: #5d9177; 
+  border: none;
+  box-shadow:  2px 4px rgba(0, 0, 0, 0.1);  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+
