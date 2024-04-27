@@ -8,15 +8,13 @@
 </head>
 
 <body>
-
-    <div class="halaman2">
+        <div class="halaman2">
         <div class="sidebar">
             <h1><img src="icon.png" ></h1>
             <h2>My Account</h2>
             <ul>
-                <li>History</li>
-                <li>Setting</li>
-                <li>Help</li>
+                <li class="b"><a href="dashboard.php">Dashboard</a></li>
+                <li class="c"><a href="dataReservasi.php">Reservation</a></li>
             </ul>
             <form>
                 <button type="submit">Logout</button>
@@ -29,62 +27,38 @@
     
             <div class="reservation">
                 <h2>Reservations</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tanggal Reservasi</th>
-                            <th>Untuk Tanggal</th>
-                            <th> Nama </th>
-                            <th>Nomor Telepon</th>
-                            <th>Nomor Meja</th>
-                            <th>Jumlah Tamu</th>
-                            <th>Status Pembayaran</th>                </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>12 April 2024</td>
-                            <td>14 April 2024</td>
-                            <td>Oliv</td>
-                            <td>08123456789</td>
-                            <td>5</td>
-                            <td>3</td>
-                            <td>Lunas</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>13 April 2024</td>
-                            <td>20 April 2024</td>
-                            <td>Mila</td>
-                            <td>08128756269</td>
-                            <td>12</td>
-                            <td>4</td>
-                            <td>Belum Bayar</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                        </tr>
-                    </tbody>
-                                    <tbody>
-                        <tr>
-                            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button>Edit</button>
-                <button>Delete</button>
+
+                <form action="tambah_data.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                    <label for="tanggal_reservasi">Tanggal Reservasi:</label><br>
+                    <input type="date" id="tanggal_reservasi" name="tanggal_reservasi"><br>
+
+                    <label for="Untuk Tanggal">Untuk Tanggal/Jam</label><br>
+                    <input type="date" id="untuk_tanggal" name="untuk_tanggal"><br>
+
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama"><br>
+
+                    <label for="nomor_telepon">Nomor Telepon:</label><br>
+                    <input type="tel" id="nomor_telepon" name="nomor_telepon"><br>
+
+                    <label for="nomor_meja">Nomor Meja:</label><br>
+                    <input type="text" id="nomor_meja" name="nomor_meja"><br>
+
+                    <label for="jumlah_tamu">Jumlah Tamu:</label><br>
+                    <input type="number" id="jumlah_tamu" name="jumlah_tamu"><br>
+
+                    <label for="status_pembayaran">Status Pembayaran:</label><br>
+                    <select id="status_pembayaran" name="status_pembayaran">
+                        <option value="paid">Paid</option>
+                        <option value="unpaid">Unpaid</option>
+                    </select><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+                <!-- <button>Edit</button>
+                <button>Delete</button> -->
             </div>
     
         </div>

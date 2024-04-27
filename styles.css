@@ -2,8 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #edf3d7;
+  background-image: url('bg.jpg');
 }
+
+
 input {
   width: 100%;
 }
@@ -16,7 +18,7 @@ input {
 .cover {
   width: 350px;
   height:350px;
-  background-color: #5d9177;
+  background-color:#b3a08f8f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,13 +32,14 @@ input {
   border-color: beige;
 }
 .style-box-login{
+  background-color: #463525;
   width: 100px;
-  height: 30px;
-  margin: 30px;
+  height: 34px;
+  margin: 34px;
   font-size: 15px;
-  color: #3d574a;
-  border-radius: 10px;
-  border-color: beige;
+  color: #f3f1ee;
+  border-radius: 15px;
+  border-color: rgb(116, 75, 29);
   font-weight: bold;
   margin-left: 55px
 
@@ -49,7 +52,9 @@ input {
 }
 
 .text {
-  color: #1d4631;
+  color: #0a0909;
+  font-weight: bold;
+
 }
 
 .sidebar {
@@ -58,7 +63,7 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #3d574a;
+  background-color:#81542afa;
   padding-top: 20px;
 }
 
@@ -72,11 +77,13 @@ input {
   padding: 0;
 }
 
-.sidebar ul li {
-  padding: 10px;
+.sidebar ul li a {
+  padding: 20px;
   color: #fff;
   text-decoration: none;
+  display:block;
 }
+
 
 .sidebar h1 img {
   width: 100%;
@@ -90,13 +97,14 @@ input {
 
 .sidebar form {
   text-align: center;
-  margin-top: 400px; 
+  margin-top: 200px;
+
 }
 
 .sidebar form button {
-  background-color: #b8c7a5; 
+  background-color: #362611; 
   box-shadow:  2px 4px rgba(0, 0, 0, 0.1);  border: none;
-  color: #3d574a;
+  color: #ebf5f0;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -114,23 +122,32 @@ input {
 
 .dashboard h1 {
   text-align: center;
-  font-size: 28px; /* Ukuran teks */
-  color: #333; /* Warna teks */
+  font-size: 28px; 
+  color: #ffffff; 
   margin-left: 200px;
+  background-color: #e6c3a2b4;
+  border-radius: 20px;
 
 }
+
 
 .reservation {
   margin-left: 200px;
   padding: 20px;
-  background-color: #c9ddb0;
+  background-color: #c4977aa2;
+  border-radius: 20px;
 
 }
 
 .reservation h2 {
-  color:#132e35 ;
+  color:#ffffff ;
   margin-top: 50px;
+  background-color: #291e14a1;
+  padding:10px;
+  border-radius: 20px;
 }
+
+
 
 table {
   width: 100%;
@@ -138,20 +155,21 @@ table {
 }
 
 table th, table td {
-  border: 1px solid #32644d;
   padding: 8px;
   text-align: left;
 }
 
 table th {
-  background-color: #3d574a;
+  background-color: #492e15d8;
   color: #f7f7f7;
 }
 
+
+
 .reservation button {
-  background-color: #5d9177; 
+  background-color: #b99c80; 
   border: none;
-  box-shadow:  2px 4px rgba(0, 0, 0, 0.1);  border: none;
+  box-shadow:  2px 3px rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -164,5 +182,38 @@ table th {
   cursor: pointer;
   margin-top: 50px;
 }
+
+
+
+
+
+.judulData h1{
+  color: #fff;
+  background-color: #af91769c;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.reservation label{
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #5c3419,  
+  1px -1px 0 #5c3419,
+  -1px 1px 0 #5c3419,
+  1px 1px 0 #5c3419;
+
+}
+
+.reservation form input, .reservation select{
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.reservation input,
+.reservation select {
+    margin-bottom: 15px; /* Atur jarak antara elemen input dan elemen select */
+}
+
 
 
